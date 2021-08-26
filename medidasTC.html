@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 3 del Curso Práctico de JavaScript: Media, Moda y Mediana</title>
+</head>
+<body>
+    <script src="./medidasTC.js"></script>
+    <section>
+        <h1>Estadística con Hoppechin</h1>
+        <h2>Calcular las Medidad de Tendencia Central</h2>
+        <h3>Media, Moda y Mediana</h3>
+        <p>En este script de JavaScript calculamos las medidad de tendencia central y los mostramos en HTML.</p>
+        <p>Utilizamos diferentes métodos para lograrlo  que puedes revisar en los scripts de JS.</p>
+        <p>Por ejemplo: ek input permite ir creando un arreglo, que después se muestra organizado en orden ascendente</p>
+        <p> Ese mismo arreglo es el input para el calculo de la Media, Moda y Mediana (La moda tiene un bug)</p>
+    </section>
+    <form>
+        <label for="InputArray">
+            Agrega un número a la lista:
+        </label>
+        <input id="InputArray" type="number"/>
+        <button type="button" onclick="crearLista()">Agregar a lista</button>
+        <button type="button" onclick="clearLista()">Clear</button>
+    </form>
+    <p id="ArrayShow"></p>
+    <p id="resultadoMediana"></p>
+    <p id="resultadoModa"></p>
+    <p id="resultadoMedia"></p>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuación de cohetes</title>
+</head>
+<body>
+    <h1>Cohetería: Ecuación de Tsiolkovski en el espacio libre</h1>
+    <p>El calculo del cambio de velocidad es clave para entender el desempeño de un cohete</p>
+    <p>Se Calcula utilizando el Impulso específico (Isp), la gravedad en la tierra (go = 9.81 m/s) y la masa del cohete con (masai) y sin (masaf) combustible</p>
+    <p> deltaV = go*Isp*ln(masai/masaf)</p>
+    <section>
+        <h2>Calcula el perímetro de un triángulo</h2>
+        <form>
+            <label for="masaS">Masa Estructural (KG):</label>
+            <input id="masaS" type="number"/>
+            
+            <label for="masaPL">Masa de la Carga (payload, KG): </label>
+            <input id="masaPL" type="number"/>
+            
+            <label for="masaProp">Masa del Combustible (KG): </label>
+            <input id="masaProp" type="number"/>
+
+            <label for="Isp">Impulso específico: </label>
+            <input id="Isp" type="number"/>
+
+            <button type="button" onclick="deltaV()">Calcular deltaV</button>
+        </form>
+        <p id="printDV"></p>
+    </section>
+    <script src="rocket.js"></script>
+</body>
+</html>

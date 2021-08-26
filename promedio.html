@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 3 del Curso Práctico de JavaScript: Promedio</title>
+</head>
+<body>
+    <h1>Promedio</h1>
+    <h2>Calcular la Media en JavaScript</h2>
+    <p>En este script, usamos dos métodos para cacular el promedio, uno utiliza un ciclo for, el otro un array.reduce().</p>
+    <p>Con estos métodos encapsulamos en funciones el calculo de la media aritmética</p>
+    <ol>
+        <li>Declarar una variable que cambiará conforme se agregan elementos con "let":
+            <p>let sumaLista1 = 0;</p></li>
+        <li>/**para sumar los elementos de la lista se usa el siguiente ciclo for, sirve usar let porque el valor será cambiante.</li>
+        <li>El código en la imagen muestra dos formas de hacerlo. Una es la función normal, otra es la función encapsulada usando el método reduce.</li>
+    </ol>
+    <img src="imagenes/Screen Shot 2021-08-18 at 6.31.27 AM.png">
+
+    <p><button type="button" onclick="MostrarPromedio()">Mostrar Promedio</button></p>
+    <p>Al presionar el boton se mostrará el promedio de la lista: 100, 200, 300, 400, 500</p>
+    <p>Ese promedio es igual a: 300</p>
+    <p id="PromedioFinal"></p>
+
+    <script src="./promedio.js"></script>
+</body>
+</html>

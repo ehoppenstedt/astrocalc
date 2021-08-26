@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa de Precios y Descuentos</title>
+</head>
+<header>
+    <h1>
+        Descuentos
+    </h1>
+    <p>Este es el segundo ejercicio del curso Práctico de JavaScript</p>
+    <script src="./descuentos.js"></script>
+</header>
+<body>
+    <section>
+        <h2>Calcular el precio de un producto</h2>
+        <form>
+            <label for="InputPrecio">
+                Escribe el precio del producto:
+            </label>
+            <input id="InputPrecio" type="number"/>
+
+            <label for="InputDescuento">
+                Escribe el porcentaje del descuento:
+            </label>
+            <input id="InputDescuento" type="number"/>
+
+            <button type="button" onclick="calcularPrecioDescontado()">Precio con descuento</button>
+        </form>
+    </section>
+    <section>
+        <label for="Coupon">
+            Agrega un cupon de Descuento:
+        </label>
+        <input id="Coupon" type="string"/>
+        <button type="button" onclick="validateCoupon()">Validar cupon</button>
+    </section>
+    <p id="ResultPrice"></p>
+    <p id="ValidCoupon"></p>
+</body>
+</html>
